@@ -1,0 +1,66 @@
+.cardbox__list__task {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-gap: 0.5rem;
+  border-top: 1px solid rgba(220, 220, 220, 0.2);
+  border-bottom: 1px solid rgba(220, 220, 220, 0.2);
+  height: 2.5rem;
+  padding: 0.2rem;
+}
+
+.cardbox__list__task__checkbox {
+}
+
+.cardbox__list__task__text {
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #828282;
+  transition: 0.2s;
+}
+
+.checkbox:checked {
+  position: relative;
+  background: #43c337;
+}
+
+.checkbox::before {
+  content: "✔";
+  font-size: 1.5em;
+  color: #fff;
+  position: absolute;
+  left: 3.5px;
+}
+
+.label {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text-checked {
+  color: #5a5a5a;
+  text-decoration: line-through;
+}
+
+.deleteIcon {
+  color: #bdbdbd;
+  font-size: 20px;
+  margin: 0 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.deleteIcon:hover {
+  color: red;
+}

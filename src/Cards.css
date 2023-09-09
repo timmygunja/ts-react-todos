@@ -1,0 +1,104 @@
+.cardbox {
+  border: 1px solid gainsboro;
+  background-color: white;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-areas:
+    "input"
+    "list"
+    "tail";
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.cardbox__input {
+  grid-area: input;
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-columns: 1fr 8fr 1fr;
+  height: 3.5rem;
+}
+
+.cardbox__input__img img {
+  width: 65%;
+}
+
+button[type="submit"] {
+  display: none;
+}
+
+input[type="text"] {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-style: italic;
+}
+
+.cardbox__input__sumbit img {
+  width: 65%;
+}
+
+.cardbox__list {
+  grid-area: list;
+}
+
+.cardbox__tail {
+  grid-area: tail;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "counter buttons clear";
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 0.6rem;
+}
+
+.cardbox__tail__counter {
+  grid-area: counter;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cardbox__tail__buttons {
+  grid-area: buttons;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.cardbox__tail__buttons div {
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  transition: 0.2s;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+
+.button_active,
+.cardbox__tail__buttons div:hover {
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  color: rgba(230, 40, 40, 0.9);
+}
+
+.cardbox__tail__clear {
+  grid-area: clear;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.cardbox__tail__clear:hover {
+  color: rgba(255, 110, 110, 0.8);
+}
