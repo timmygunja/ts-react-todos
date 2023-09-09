@@ -16,6 +16,7 @@ function Todo({ menuActive, todo, reload, setReload, deleteTodo, }) {
     (0, react_1.useEffect)(() => {
         todo.checked ? setTextClass("text-checked") : setTextClass("");
     }, [test, todo.checked]);
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "cardbox__list__task", children: [(0, jsx_runtime_1.jsx)("div", { className: "cardbox__list__task__checkbox centered", children: (0, jsx_runtime_1.jsx)("input", { type: "checkbox", name: "checkbox", id: todo.id, className: "checkbox", onChange: handleCheckbox, checked: todo.checked }) }), (0, jsx_runtime_1.jsx)("label", { className: `cardbox__list__task__text label ${textClass}`, htmlFor: todo.id, children: todo.text }), menuActive === "completed" ? ((0, jsx_runtime_1.jsx)("div", { className: "centered", children: (0, jsx_runtime_1.jsx)(md_1.MdDeleteOutline, { className: "deleteIcon", onClick: () => deleteTodo(todo.id) }) })) : null] }));
+    return ((0, jsx_runtime_1.jsxs)("div", Object.assign({ className: "cardbox__list__task" }, { children: [(0, jsx_runtime_1.jsx)("div", Object.assign({ className: "cardbox__list__task__checkbox centered" }, { children: (0, jsx_runtime_1.jsx)("input", { type: "checkbox", name: "checkbox", id: todo.id, className: "checkbox", onChange: handleCheckbox, checked: todo.checked }) })), (0, jsx_runtime_1.jsx)("label", Object.assign({ className: `cardbox__list__task__text label ${textClass}`, htmlFor: todo.id }, { children: todo.text })), menuActive === "completed" ? ((0, jsx_runtime_1.jsx)("div", Object.assign({ className: "centered" }, { children: (0, jsx_runtime_1.jsx)(md_1.MdDeleteOutline, { className: "deleteIcon", onClick: () => deleteTodo(todo.id) }) }))) : null] })));
 }
 exports.default = Todo;
+//# sourceMappingURL=Todo.js.map
