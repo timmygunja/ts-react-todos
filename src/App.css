@@ -17,3 +17,22 @@
   margin: 1rem;
 }
 
+@media screen and (max-width: 1080px) {
+  .box {
+    width: 65%;
+  }
+
+  .box__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 80%;
+  }
+
+  .box__title {
+    font-size: 3rem;
+  }
+}

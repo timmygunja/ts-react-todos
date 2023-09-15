@@ -19,7 +19,7 @@
 }
 
 .cardbox__input__img img {
-  width: 65%;
+  width: 80%;
 }
 
 button[type="submit"] {
@@ -42,7 +42,18 @@ input::placeholder {
 }
 
 .cardbox__input__sumbit img {
-  width: 65%;
+  width: 80%;
+}
+
+@media screen and (max-width: 1080px) {
+  .cardbox__input__img img,
+  .cardbox__input__sumbit img {
+    width: 80%;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+  }
 }
 
 .cardbox__list {
@@ -58,6 +69,17 @@ input::placeholder {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
   padding: 0.5rem 0.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .cardbox__tail {
+    font-size: 0.6rem;
+  }
+
+  .cardbox__input__img img,
+  .cardbox__input__sumbit img {
+    width: 87%;
+  }
 }
 
 .cardbox__tail__counter {
