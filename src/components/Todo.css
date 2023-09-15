@@ -37,7 +37,7 @@
 .checkbox::before {
   content: "✔";
   font-size: 1.5em;
-  color: #fff;
+  color: whitesmoke;
   position: absolute;
   left: 3.5px;
 }
